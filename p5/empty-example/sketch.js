@@ -1,7 +1,14 @@
 function setup() {
-  // put setup code here
+  createCanvas(800, 800);
 }
 
 function draw() {
-  // put drawing code here
+  var canvas = document.getElementById('canvas');
+  if (canvas.getContext) {
+    var ctx = canvas.getContext('2d');
+
+    ctx.fillRect(25, 25, 100, 100);
+    ctx.clearRect(45, 45, 60, 60);
+    ctx.strokeRect(50, 50, 50, 50);
+  }
 }
