@@ -11,4 +11,3 @@ function draw() {
     clearRect(45, 45, 60, 60);
     strokeRect(50, 50, 50, 50);
   }
-}
